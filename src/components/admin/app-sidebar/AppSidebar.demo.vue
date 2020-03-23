@@ -6,8 +6,8 @@
         :minimized="minimized"
       >
         <template slot="menu">
-          <template v-for="(item, index) in items">
-            <app-sidebar-link-group
+        <!-- <template v-for="(item, index) in items"> -->
+        <!-- <app-sidebar-link-group
               :key="index"
               :icon="[ 'sidebar-menu-item-icon vuestic-iconset', item.meta.iconClass ]"
               v-if="item.children">
@@ -21,9 +21,9 @@
                   <span>{{ subMenuItem.displayName }}</span>
                 </div>
               </app-sidebar-link>
-            </app-sidebar-link-group>
+            </app-sidebar-link-group> -->
 
-            <app-sidebar-link
+        <!-- <app-sidebar-link
               v-else
               :key="index"
               :icon="[ 'sidebar-menu-item-icon vuestic-iconset', item.meta.iconClass ]"
@@ -32,7 +32,7 @@
             </app-sidebar-link>
           </template>
         </template>
-      </app-sidebar>
+      </app-sidebar> -->
     </VbCard>
 
     <VbCard title="Sidebar minimised">

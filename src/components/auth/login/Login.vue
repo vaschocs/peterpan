@@ -6,7 +6,7 @@
       :label="$t('auth.email')"
       :error="!!emailErrors.length"
       :error-messages="emailErrors"
-    />
+    />c
 
     <va-input
       v-model="password"
