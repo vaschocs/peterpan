@@ -25,10 +25,7 @@
     "halves": "Halves",
     "small": "Small"
   },
-  "typography": {
-    "primary": "Primary text styles",
-    "secondary": "Secondary text styles"
-  },
+
   "colorPickers": {
     "simple": "Simple",
     "slider": "Slider",
@@ -310,8 +307,6 @@
     "dataTables": "Data Tables",
     "chips": "Chips",
     "tabs": "Tabs",
-    "typography": "Typography",
-    "uiElements": "UI Elements",
     "treeView": "Tree view",
     "dateTimePickers": "Date time pickers",
     "fileUpload": "File Upload",

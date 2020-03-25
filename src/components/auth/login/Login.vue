@@ -6,7 +6,7 @@
       :label="$t('auth.email')"
       :error="!!emailErrors.length"
       :error-messages="emailErrors"
-    />c
+    />
 
     <va-input
       v-model="password"
@@ -51,7 +51,7 @@ export default {
       if (!this.formReady) {
         return
       }
-      this.$router.push({ name: 'dashboard' })
+      this.$router.push({ name: 'charts' })
     },
   },
 }

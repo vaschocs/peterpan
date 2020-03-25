@@ -1,0 +1,83 @@
+[
+  {
+    "id": "1",
+    "name": "Erica",
+    "email": "mcguireprince@glasstep.com",
+    "jmlvote": "45",
+    "starred": false,
+    "status": "audisi"
+  },
+  {
+    "id": "2",
+    "name": "Ferren",
+    "email": "deanjennings@glasstep.com",
+    "jmlvote": "90",
+    "starred": true,
+    "status": "eliminasi"
+  },
+  {
+    "id": "3",
+    "name": "Michael",
+    "email": "cottonweber@glasstep.com",
+    "jmlvote": "34",
+    "starred": false,
+    "status": "eliminasi"
+  },
+  {
+    "id": "4",
+    "name": "Asland",
+    "email": "osbornefoster@glasstep.com",
+    "jmlvote": "67",
+    "starred": true,
+    "status": "finalis"
+  },
+  {
+    "id": "5",
+    "name": "Moses",
+    "email": "williamdillard@glasstep.com",
+    "jmlvote": "67",
+    "starred": true,
+    "status": "audisi"
+  },
+  {
+    "id": "6",
+    "name": "Jordan",
+    "email": "annameyers@glasstep.com",
+    "jmlvote": "89",
+    "starred": false,
+    "status": "finalis"
+  },
+  {
+    "id": "7",
+    "name": "Kezia",
+    "email": "anabarrett@glasstep.com",
+    "jmlvote": "78",
+    "starred": false,
+    "status": "audisi"
+  },
+  {
+    "id": "8",
+    "name": "Jhon",
+    "email": "pamward@glasstep.com",
+    "jmlvote": "87",
+    "starred": false,
+    "status": "audisi"
+  },
+  {
+    "id": "9",
+    "name": "Arlen",
+    "email": "hannahholloway@glasstep.com",
+    "jmlvote": "Gibraltar",
+    "starred": false,
+    "status": "finalis"
+  },
+  {
+    "id": "10",
+    "name": "Bram",
+    "email": "allisoncobb@glasstep.com",
+    "jmlvote": "45",
+    "starred": true,
+    "status": "audisi"
+  }
+
+]

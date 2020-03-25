@@ -3,36 +3,7 @@
     <VbCard title="Sidebar">
       <app-sidebar
         style="position: static; height: auto;"
-        :minimized="minimized"
-      >
-        <template slot="menu">
-        <!-- <template v-for="(item, index) in items"> -->
-        <!-- <app-sidebar-link-group
-              :key="index"
-              :icon="[ 'sidebar-menu-item-icon vuestic-iconset', item.meta.iconClass ]"
-              v-if="item.children">
-              <span slot="title">{{ item.displayName }}</span>
-              <app-sidebar-link
-                v-for="(subMenuItem, index) in item.children"
-                :key="index"
-                :to="{ name: subMenuItem.name }"
-              >
-                <div slot="title">
-                  <span>{{ subMenuItem.displayName }}</span>
-                </div>
-              </app-sidebar-link>
-            </app-sidebar-link-group> -->
-
-        <!-- <app-sidebar-link
-              v-else
-              :key="index"
-              :icon="[ 'sidebar-menu-item-icon vuestic-iconset', item.meta.iconClass ]"
-              :to="{ name: item.name }">
-              <span slot="title">{{ item.displayName }}</span>
-            </app-sidebar-link>
-          </template>
-        </template>
-      </app-sidebar> -->
+        :minimized="minimized">
     </VbCard>
 
     <VbCard title="Sidebar minimised">
