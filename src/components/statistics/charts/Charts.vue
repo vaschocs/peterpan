@@ -3,44 +3,53 @@
     <div class="charts">
       <div class="row">
         <div class="flex xs12">
-          <va-card class="chart-widget" :title="$t('charts.verticalBarChart')">
-            <button class="btn btn-dropdown" >Submit</button>
+          <va-card class="chart-widget">
+            <h2>DUTA IDOL</h2>
+            <h3>Minggu ke -4</h3>
+            <br />
+            <br />
+            <div align="right">
+              <b-dropdown id="dropdown" text="Minggu ke" class="m-md-2">
+                <b-dropdown-item v-for="sesi in sesis" :key="sesi.id_sesi_vote">{{sesi.ket_sesi}}</b-dropdown-item>
+              </b-dropdown>
+            </div>
             <va-chart :data="verticalBarChartData" type="vertical-bar" />
           </va-card>
         </div>
       </div>
     </div>
-    <div class="markup-tables">
-      <div class="row">
-        <div class="flex xs12">
-          <va-card>
-            <h2>DATA PESERTA</h2>
-            <br />
-            <table class="va-table va-table--striped va-table--hoverable">
-              <thead>
-                <tr>
-                  <th>ID</th>
-                  <th>Name</th>
-                  <th>Email</th>
-                  <th>Jumlah Vote</th>
-                  <th>Status</th>
-                </tr>
-              </thead>
-
-              <tbody>
-                <tr v-for="user in users" :key="user.id">
-                  <td>{{ user.id }}</td>
-                  <td>{{ user.name }}</td>
-                  <td>{{ user.email }}</td>
-                  <td>{{ user.jmlvote }}</td>
-                  <td>
-                    <va-badge :color="getStatusColor(user.status)">{{ user.status }}</va-badge>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </va-card>
-        </div>
+    <div class="row">
+      <div class="flex xs12">
+        <va-card class="flex xs12">
+          <h2>DATA PESERTA</h2>
+          <br />
+          <table class="va-table va-table--striped va-table--hoverable">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Status</th>
+                <th>Aksi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="user in users" :key="user.id">
+                <td>{{ user.id }}</td>
+                <td>{{ user.name }}</td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.password }}</td>
+                <td>{{ user.status }}</td>
+                <td>
+                  <b-link href="#foo">Edit</b-link>
+                  <b-link href="#foo">View</b-link>
+                  <b-link href="#foo">Delete</b-link>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </va-card>
       </div>
     </div>
   </div>
@@ -48,29 +57,28 @@
 
 <script>
 import { getVerticalBarChartData } from '../../../data/charts/VerticalBarChartData'
-import data from './data.json'
+import axios from 'axios'
+import { BLink, DropdownPlugin, BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 
 export default {
   name: 'charts',
   data () {
     return {
       verticalBarChartData: getVerticalBarChartData(this.$themes),
-      users: data.slice(0, 8),
+      users: [],
+      sesis: [],
     }
   },
 
-  methods: {
-    getStatusColor (status) {
-      if (status === 'finalis') {
-        return 'success'
-      }
-
-      if (status === 'audisi') {
-        return 'info'
-      }
-
-      return 'danger'
-    },
+  async mounted () {
+    {
+      const response = await axios.get('http://localhost:3000/users')
+      this.users = response.data
+    }
+    {
+      const response = await axios.get('http://localhost:3000/sesis')
+      this.sesis = response.data
+    }
   },
 }
 </script>

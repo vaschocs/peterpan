@@ -12,7 +12,7 @@ export const navigationRoutes = {
       },
     },
     {
-      name: 'forms',
+      name: 'peserta',
       displayName: 'Peserta',
       meta: {
         iconClass: 'vuestic-iconset vuestic-iconset-files',
@@ -37,7 +37,7 @@ export const navigationRoutes = {
       },
       children: [
         {
-          name: 'regitrasi-juri',
+          name: 'registrasi-juri',
           displayName: 'Registrasi Juri',
         },
         {

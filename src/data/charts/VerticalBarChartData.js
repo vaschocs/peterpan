@@ -5,13 +5,7 @@ export const getVerticalBarChartData = (themes) => ({
       label: 'VOTE',
       backgroundColor: themes.info,
       borderColor: 'transparent',
-      data: [50, 20, 12, 39, 100, 40, 39, 80, 40, 20],
+      data: [50, 67, 89, 39, 100, 40, 39, 80, 40, 70],
     },
-    // {
-    //   label: 'USSR',
-    //   backgroundColor: themes.info,
-    //   borderColor: 'transparent',
-    //   data: [50, 10, 22, 39, 15, 20, 85, 32, 60, 50, 20, 30],
-    // },
   ],
 })

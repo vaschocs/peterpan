@@ -84,9 +84,11 @@ export default new Router({
               name: 'registrasi-peserta',
               path: 'registrasi-peserta',
               component: () => import('../components/peserta/RegistrasiPeserta.vue'),
-              meta: {
-                wikiLink: 'https://github.com/epicmaxco/vuestic-admin/wiki/inputs',
-              },
+            },
+            {
+              name: 'lihat-peserta',
+              path: 'lihat-peserta',
+              component: () => import('../components/peserta/LihatPeserta.vue'),
             },
           ],
         },
@@ -99,9 +101,11 @@ export default new Router({
               name: 'registrasi-juri',
               path: 'registrasi-juri',
               component: () => import('../components/juri/RegistrasiJuri.vue'),
-              meta: {
-                wikiLink: 'https://github.com/epicmaxco/vuestic-admin/wiki/inputs',
-              },
+            },
+            {
+              name: 'lihat-juri',
+              path: 'lihat-juri',
+              component: () => import('../components/juri/LihatJuri.vue'),
             },
           ],
         },
@@ -144,25 +148,7 @@ export default new Router({
             },
           ],
         },
-        {
-          name: 'tables',
-          path: 'tables',
-          component: EmptyParentComponent,
-          children: [
-            {
-              name: 'markup',
-              path: 'markup',
-              component: () => import('../components/markup-tables/MarkupTables.vue'),
-              wikiLink: 'https://github.com/epicmaxco/vuestic-admin/wiki/Tables', // TODO Update docs
-            },
-            {
-              name: 'data',
-              path: 'data',
-              component: () => import('../components/data-tables/DataTables.vue'),
-              wikiLink: 'https://github.com/epicmaxco/vuestic-admin/wiki/Tables', // TODO Add docs
-            },
-          ],
-        },
+
         {
           name: 'pages',
           path: 'pages',

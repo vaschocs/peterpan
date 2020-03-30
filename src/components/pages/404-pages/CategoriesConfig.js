@@ -20,8 +20,8 @@ export default [
         itemLink: '/admin/peserta/registrasi-peserta',
       },
       {
-        itemName: 'Medium Editor',
-        itemLink: '/admin/forms/medium-editor',
+        itemName: 'Lihat Peserta',
+        itemLink: '/admin/peserta/lihat-peserta',
       },
     ],
   },
@@ -33,21 +33,8 @@ export default [
         itemLink: '/admin/juri/registrasi-juri',
       },
       {
-        itemName: 'Medium Editor',
-        itemLink: '/admin/forms/medium-editor',
-      },
-    ],
-  },
-  {
-    categoryName: 'Tables',
-    items: [
-      {
-        itemName: 'Markup Tables',
-        itemLink: '/admin/tables/markup',
-      },
-      {
-        itemName: 'Data Tables',
-        itemLink: '/admin/tables/data',
+        itemName: 'Lihat Juri',
+        itemLink: '/admin/juri/lihat-juri',
       },
     ],
   },

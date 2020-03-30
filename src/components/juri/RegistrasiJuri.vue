@@ -40,7 +40,7 @@
                 />
               </div>
               <div>
-                <button class="btn btn-success">Submit</button>
+                <button class="btn btn-success">Edit Data Diri</button>
               </div>
             </div>
           </form>

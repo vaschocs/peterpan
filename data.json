@@ -1,5 +1,5 @@
 {
-  "user": [
+  "users": [
   {
     "id": "1",
     "name": "Erica",
@@ -70,6 +70,30 @@
     "password":"sdfsdfsdfsdfsdfdf",
     "status": "audisi"
   }
+],
+"sesis":[
+  {
+    "id_sesi_vote" : "1",
+    "ket_sesi":"Minggu 1"
+  },
+  {
+    "id_sesi_vote" : "2",
+    "ket_sesi":"Minggu 2"
+  },
+  {
+    "id_sesi_vote" : "3",
+    "ket_sesi":"Minggu 3"
+  }
+],
+"lists" : [
+  {
+    "id_org_di_vote" : "1",
 
+    "total" : "2"
+  },
+  {
+    "id_org_di_vote" : "4",
+    "total" : "7"
+  }
 ]
 }
